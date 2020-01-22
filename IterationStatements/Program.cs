@@ -10,7 +10,7 @@ namespace IterationStatements
             //TODO
 
             //DONE- Create a List called "numbers"
-            var numbers = new List<int>();
+            var number = new List<int>();
 
             //Create a variable of type int with an initializer of 0
             var i = 0;
@@ -26,7 +26,7 @@ namespace IterationStatements
             do
             {
                 i++;
-                numbers.Add(i);
+                number.Add(i);
 
             } while (i < 100);
 
@@ -40,7 +40,7 @@ namespace IterationStatements
             while (i < 200)
             {
                 i++;
-                numbers.Add(i);
+                number.Add(i);
             }
                 
 
@@ -51,11 +51,10 @@ namespace IterationStatements
 
             // Create a foreach loop
             // Write your variable to the console
-            foreach (var number in numbers)
-
+            foreach (var num in number)
             {
 
-                Console.WriteLine(numbers);
+                Console.WriteLine(num);
             }
 
             {
@@ -65,18 +64,19 @@ namespace IterationStatements
             Console.WriteLine("Decrease:");
 
             // Create a for loop
-            // in your initializer set the value of i to 199
-            // in your conditional, as long as i is less than or equal to the length of "numbers"
-            // and as long as i is greater than or equal to 0
-            // Decrement i by 1
+            // in your initializer set the value of j to 199
+            // in your conditional, as long as j is less than or equal to the length of "numbers"
+            // and as long as j is greater than or equal to 0
+            // Decrement j by 1
             {
-                // Write to the console "numbers" at index i
+                // Write to the console "numbers" at index j
             }
-            for (int j = 199; j < numbers.Count && j >= 0; j--)
+            for (int j = 199; j <= number.Count && j >= 0; j--)
             {
-                Console.WriteLine(numbers[j]);
+                Console.WriteLine(number[j]);
             }
-            Console.WriteLine(numbers.Count);
+            Console.WriteLine(number.Count);
         }
     }
 }
+
